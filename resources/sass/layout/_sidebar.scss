@@ -1,0 +1,9 @@
+aside {
+  margin-top: 0;
+  @include breakpoint(md) {
+    margin-top: 60px;
+  }
+  &.sticky-top {
+    top: 112px;
+  }
+}

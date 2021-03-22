@@ -1,0 +1,44 @@
+
+// Body
+$body-bg: #fff;
+
+// Typography
+$font-size-base: 0.82rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66D9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+
+
+/* Header Colors */
+$light-blue1 : #D5ECFF;
+$light-blue2 : #E8F4FD;
+
+
+
+/* Social Icon Colors */
+$fb-color : #4267B2;
+$tw-color : #1da1f2;
+$ig-color : #F07041;
+$yt-color : #FF0000;
+
+
+/* Bootstrap overrides */
+$primary:       #1166AA !default;
+$secondary:     #5F5F5F !default;
+$gray     :     #C5C5C5 !default;
+
+$border-color: $gray;
+
+$navbar-light-color: $secondary;
+
+

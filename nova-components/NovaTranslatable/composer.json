@@ -1,0 +1,30 @@
+{
+    "name": "adlux/nova-translatable",
+    "description": "A Laravel Nova field.",
+    "keywords": [
+        "laravel",
+        "nova"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0",
+        "spatie/laravel-translatable": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Adlux\\NovaTranslatable\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Adlux\\NovaTranslatable\\FieldServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
