@@ -19,7 +19,7 @@
                         crusades.
                         For those who live in the United States and sign up with a monthly contribution of $10 or more,
                         we
-                        will also mail you a hard copy of the book. As a partner not only you will be receiving a copy of the book, 
+                        will also mail you a hard copy of the book. As a partner not only you will be receiving a copy of the book,
                         but you will also be making the book "My Beloved Holy Spirit" available in Hebrew as a free gift to the Jewish people.</p>
 
                     <p>We are a nonprofit organization, and upon request, we will also send you a tax deductible form at
@@ -59,7 +59,7 @@
                         Si te gustaría patrocinar el ministerio, simplemente elige una de las opciones debajo:
                     </p>
                 @endif
-                
+
                 @if(app()->getLocale() == 'iw')
                     <p>בתרומה של 5 דולר לחודש ומעלה, אתה יכול לשתף פעולה עם המשרד כדי לאפשר לנו להמשיך ולקבל את הבשורה של ישוע המשיח בכוח רוח הקודש לאומות.</p>
 
@@ -76,6 +76,34 @@
 
                         אם ברצונך לשתף פעולה עם המשרד, בחר באחת מהאפשרויות שלהלן:</p>
                 @endif
+
+                @if(app()->getLocale() == 'it')
+                <p>Con un contributo di $ 5 al mese o più, puoi collaborare con il ministero rendendoci possibile continuare a portare il vangelo di Gesù Cristo alle nazioni nella potenza dello Spirito Santo
+                    È nostro desiderio vedere il Signore distribuire il Suo Spirito a tutti e che intere nazioni giungano alla conoscenza di Gesù. Con il tuo sostegno potremo continuare a realizzare questa visione iniziata nel cuore di Dio! Se desideri collaborare con il ministero, scegli semplicemente una delle opzioni seguenti:
+                    .</p>
+
+                <p>In appreciation for your support, you will have online access to the book “My Beloved Holy
+                    Spirit”
+                    written by Andres Bisonni, and to the complete teachings from different conferences and
+                    crusades.
+                    For those who live in the United States and sign up with a monthly contribution of $10 or more,
+                    we
+                    will also mail you a hard copy of the book. As a partner not only you will be receiving a copy of the book,
+                    but you will also be making the book "My Beloved Holy Spirit" available in Hebrew as a free gift to the Jewish people.</p>
+
+                <p>We are a nonprofit organization, and upon request, we will also send you a tax deductible form at
+                    the
+                    end of the year.
+
+                    It is our desire to see the Lord pour out His Spirit upon all people, and for entire nations to
+                    come
+                    to the knowledge of Jesus.
+
+                    With your support we will be able to continue to fulfill this vision that began in the heart of
+                    God!
+
+                    If you would like to partner with the ministry, simply choose one of the options below:</p>
+            @endif
 
             </div>
         </div>

@@ -65,7 +65,7 @@ class ThankYouInvite extends Notification
                 ->line('www.EspirituSanto.com')
                 ->line('Porque la tierra será llena del conocimiento de la gloria de Jehová, como las aguas cubren el mar.  (Habacuc 2:14)');
         }
-        
+
         if (app()->getLocale() === 'iw') {
             return (new MailMessage)
                 ->subject('תודה שהזמנת אותנו')
@@ -77,6 +77,19 @@ class ThankYouInvite extends Notification
                 ->line('Andres and Giannina Bisonni')
                 ->line('www.HolySpirit.tv')
                 ->line('"כִּי תִּמָּלֵא הָאָרֶץ, לָדַעַת אֶת־כְּבוֹד יְהוָה; כַּמַּיִם יְכַסּוּ עַל־יָם׃ " חבקוק ב 14');
+        }
+
+        if (app()->getLocale() === 'it') {
+            return (new MailMessage)
+                ->subject('Grazie per averci invitato')
+                ->line('Grazie per averci invitato a svolgere il ministero nella tua città. È davvero un onore per noi ricevere il tuo invito.')
+                ->line('Stiamo considerando in preghiera il tuo invito. Poiché riceviamo molti inviti, molte volte non siamo in grado di rispondere a tutti, ma è nostro desiderio andare in quante più città possibile per condividere il vangelo di Gesù Cristo.')
+                ->line('Ci benedice e ci incoraggia enormemente ogni volta che riceviamo un invito e speriamo di poter servire in ogni nazione un giorno!')
+                ->line('Grazie per amarci e sostenerci mentre continuiamo ad andare in tutto il mondo per condividere la buona notizia di Gesù.')
+                ->line('Per favore, pregate per noi,')
+                ->line('Andres e Giannina Bisonni')
+                ->line('www.italian.holyspirit.tv')
+                ->line('Poiché la conoscenza della gloria del Signore riempirà la terra, come le acque coprono il fondo del mare. Abacuc 2:14');
         }
     }
 

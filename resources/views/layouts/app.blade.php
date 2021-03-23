@@ -15,7 +15,7 @@
         @if(app()->getLocale() === 'es')
             @yield('title') - Andres Bisonni Ministerios
         @endif
-        
+
         @if(app()->getLocale() === 'iw')
             @yield('title') - אנדרס וג'יאנינה ביזוני
         @endif
@@ -126,7 +126,7 @@
                     @if(app()->getLocale() === 'es')
                         <div class="logo-text">ANDRES BISONNI <br>MINISTERIOS</div>
                     @endif
-                    
+
                     @if(app()->getLocale() === 'iw')
                         <div class="logo-text" style="font-size: 25px;">אנדרס ביסוני
  <br>משרדים</div>
@@ -244,11 +244,11 @@
                                         @if(app()->getLocale() === 'es')
                                             Canales
                                         @endif
-                                        
+
                                         @if(app()->getLocale() === 'iw')
                                             ערוצים
                                         @endif
-                                        
+
                                         <span class="caret"></span></a>
                                     <div class="dropdown-menu">
                                         @foreach($channels as $channel)
@@ -310,7 +310,7 @@
                                          data-layout="button_count">
                                     </div>
                                 @endif
-                                
+
                                 @if(app()->getLocale() == 'iw')
                                     <div class="fb-share-button"
                                          data-href="http://www.ruachadonai.tv"
@@ -328,7 +328,7 @@
                                     @if(app()->getLocale() == 'es')
                                         Segulr
                                     @endif
-                                    
+
                                     @if(app()->getLocale() == 'es')
                                         סגולר
                                     @endif
@@ -409,7 +409,7 @@
                                 @if(app()->getLocale() == 'es')
                                     Suscribirse
                                 @endif
-                                
+
                                 @if(app()->getLocale() == 'iw')
                                     הירשם כמנוי
                                 @endif
@@ -475,7 +475,7 @@
                                          data-layout="button_count">
                                     </div>
                                 @endif
-                                
+
                                 @if(app()->getLocale() == 'iw')
                                     <div class="fb-share-button"
                                          data-href="http://www.ruachadonai.tv"
@@ -493,11 +493,11 @@
                                     @if(app()->getLocale() == 'es')
                                         Segulr
                                     @endif
-                                    
+
                                     @if(app()->getLocale() == 'iw')
                                         סגולר
                                     @endif
-                                    
+
                                 </a>
                             </li>
                         </ul>
@@ -647,13 +647,13 @@
                         if (Cookies.get('googtrans')) {
 
                         }
-                        
+
                         // check if the Hebrew site is loaded and reload with the cookie as Cookies.set('googtrans', '/en/iw');
                         // if(location.href.search('ruachadonai.tv') > -1 && Cookies.get('googtrans') != '/en/iw'){
                         //     Cookies.set('googtrans', '/en/iw');
                         //     location.reload();
                         // }
-                        
+
                     }
                 }
             }, 100);

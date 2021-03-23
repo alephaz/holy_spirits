@@ -75,7 +75,7 @@ class NewUserRegistered extends Notification
                 ->line('Andres, Giannina, Elijah, Anabella y James Bisonni')
                 ->line('www.EspirituSanto.com');
         }
-        
+
         if ($this->user->locale == 'iw') {
             return (new MailMessage)
                 ->subject('סיסמה חדשה לחשבון השותף שלך')
@@ -89,6 +89,21 @@ class NewUserRegistered extends Notification
                 ->line('אנו מתפללים שהאלוהים ימשיך לברך אותך, ושישוע יהיה מהולל בחייך!')
                 ->line('אנו מתפללים אנדרס, גיאנינה, אליהו, אנאבלה וגיימס ביסוני!')
                 ->line('www.HolySpirit.tv');
+        }
+
+        if ($this->user->locale == 'it') {
+            return (new MailMessage)
+                ->subject('Nuova password per il tuo account collaboratore')
+                ->greeting('Caro Collaboratore,')
+                ->line("Grazie per il sostegno al ministero e per averci reso possibile continuare a condividere il Vangelo in tutto il mondo. Diverse persone hanno avuto problemi a reimpostare la password sul nuovo sito Web, quindi abbiamo deciso che sarebbe stato meglio per noi creare una nuova password per accedere al tuo account. Dopo aver effettuato l'accesso, puoi cambiare questa password con quella che hai scelto. Dal tuo account potrai leggere il libro \"Mio amato Spirito Santo\" e avere accesso anche agli insegnamenti di diverse conferenze e crociate.")
+                ->line('Si prega di utilizzare i seguenti dettagli per accedere al proprio accoun.')
+                ->line('email : ' . $this->user->email)
+                ->line('password : ' . $this->password)
+                ->line("I social media sono uno strumento potente nella nostra generazione per condividere il Vangelo in tutto il mondo. Questo è il motivo principale per cui abbiamo creato questo nuovo sito web. Vogliamo facilitare la possibilità per le persone di condividere compilation video, in modo che molte più vite possano ascoltare e ricevere il dono della vita eterna e il dono dello Spirito Santo. Ci sono milioni di persone in tutto il mondo che hanno ancora bisogno di ascoltare il Vangelo, ed è nostro desiderio usare ogni mezzo possibile per portare loro la buona notizia della salvezza attraverso la fede in Gesù. Continuiamo a svolgere il ministero in conferenze, crociate ed eventi giovanili in diverse nazioni. Stiamo anche producendo video e programmi TV e, con questo nuovo sito web, speriamo di utilizzare i social media per la gloria di Gesù. Crediamo che la chiamata a condividere il Vangelo sia urgente e di significato eterno. È nostro desiderio condividere il Vangelo con amore e potenza rappresentando Gesù con integrità ed eccellenza. Il suo amore per noi e il nostro amore per lui è ciò che ci motiva.")
+                ->line('Grazie per amarci e credere in questo ministero. Insieme stiamo adempiendo al suo incarico: "Andate in tutto il mondo e predicate il Vangelo a ogni creatura". Marco 16:15')
+                ->line('Preghiamo che il Signore continui a benedirti e che Gesù sia glorificato attraverso la tua vita!')
+                ->line('Andres, Giannina, Elijah, Anabella e James Bisonni')
+                ->line('www.italian.holyspirit.tv');
         }
 
     }

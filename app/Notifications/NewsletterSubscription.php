@@ -86,7 +86,7 @@ class NewsletterSubscription extends Notification
                 ->line('www.EspirituSanto.com')
                 ->line('"Porque el Señor es el Espíritu; y donde está el Espíritu del Señor, allí hay libertad. Por tanto, nosotros todos, mirando a cara descubierta como en un espejo la gloria del Señor, somos transformados de gloria en gloria en la misma imagen, como por el Espíritu del Señor." 2 Corintios 3:17-18');
         }
-        
+
         if (app()->getLocale() === 'iw') {
             return (new MailMessage)
                 ->replyTo('abm@abm.cc')
@@ -104,6 +104,24 @@ class NewsletterSubscription extends Notification
                 ->line('שלו,')
                 ->line('אנדרס, גיאנינה, אליהו, אנאבלה וגיימס ביסוני')
                 ->line('ת־רוּחִ י עַ ל־כָּ ל־בָּ שָׂ ר." יואל ג ֶפּוֹךְ אְשֶׁרֵ י־כֵ ן, אֲהָ יָה אַחְ"ו');
+        }
+
+        if (app()->getLocale() === 'it') {
+            return (new MailMessage)
+                ->replyTo('abm@abm.cc')
+                ->subject('Grazie per esserti iscritto per ricevere il libro "Mio Amato Spirito Santo" e i nostri ultimi video!!')
+                ->greeting('Dear ' . ($this->name ? $this->name : $this->email) . ',')
+                ->line('Grazie per esserti iscritto ai nostri ultimi video e al libro "Mio Amato Spirito Santo"!!')
+                ->line('Ti invieremo via email i nostri ultimi video da tutto il mondo non appena saranno prodotti. Attraverso queste raccolte video ed episodi TV speriamo non solo di informarvi su ciò che lo Spirito Santo sta facendo in diverse nazioni, ma desideriamo anche incoraggiarvi ad un rapporto più profondo con il Signore.')
+                ->line('Preghiamo affinché lo Spirito Santo utilizzi questi video per portare guarigione, ispirazione, motivazione e trasformazione nella tua vita.')
+                ->line('Vorremmo anche inviarti il libro "Mio amato Spirito Santo"')
+                ->line('To read this chapter simply click')
+                ->action('qui', 'https://www.holyspirit.tv/page/book-chapter-one?language=en')
+                ->line('Ci auguriamo che questo libro porti la rivelazione della persona e del potere dello Spirito Santo a molte vite in tutto il mondo!')
+                ->line('Grazie per amarci e sostenerci mentre continuiamo ad andare in tutto il mondo per condividere il vangelo di Gesù Cristo nella potenza')
+                ->line('Suoi,')
+                ->line('Andres, Giannina, Elijah, Anabella e James Bisonni')
+                ->line('"Dopo questo, avverrà che io spargerò il mio Spirito su ogni persona: i vostri figli e le vostre figlie profetizzeranno, i vostri vecchi faranno dei sogni, i vostri giovani avranno delle visioni. Gioele 2:28');
         }
 
     }

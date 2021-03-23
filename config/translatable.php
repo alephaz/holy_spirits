@@ -5,7 +5,8 @@ return [
     'locales' => [
         'en' => 'English',
         'es' => 'Español',
-        'iw' => 'Hebrew'
+        'iw' => 'Hebrew',
+        'it' => 'Italiano',
     ],
 
     /*
